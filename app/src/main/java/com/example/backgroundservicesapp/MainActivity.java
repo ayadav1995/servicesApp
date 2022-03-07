@@ -28,10 +28,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         url = (EditText) findViewById(R.id.url);
+        url.setText("https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf");
         url1 = (EditText) findViewById(R.id.url1);
+        url1.setText("https://hadoop.apache.org/docs/r1.2.1/hdfs_design.pdf");
         url2 = (EditText) findViewById(R.id.url2);
+        url2.setText("https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf");
         url3 = (EditText) findViewById(R.id.url3);
+        url3.setText("https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/wellarchitected-machine-learning-lens.pdf");
         url4 = (EditText) findViewById(R.id.url4);
+        url4.setText("https://developers.snowflake.com/wp-content/uploads/2020/09/SNO-eBook-7-Reference-Architectures-for-Application-Builders-MachineLearning-DataScience.pdf");
+
         downloadButton = (Button)findViewById(R.id.downloadButton);
         // https://jobs.ca.gov/pdf/jobs_by_education.pdf
         downloadButton.setOnClickListener(new View.OnClickListener() {
